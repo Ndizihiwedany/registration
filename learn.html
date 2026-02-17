@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #ff9a9e;
+        }
+        .container{
+            justify-content: center;
+            align-items: center;
+            display: grid;
+        }
+        .input-box{
+            margin-top: 20px;
+            border: none;
+            border-radius: 30px;
+            outline: none;
+            
+        }
+        .card{
+            background: linear-gradient(to left, #ff9a9e, #bef1f1);
+            height: 500px;
+            color: hsl(0, 0%, 3%);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            text-align: center;
+            position: relative;
+            font-style: initial;
+            width: 400px;
+        } 
+
+        .submit{
+            background-color: #ff9a9e;
+            border: none;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 20px;
+        }
+        ::placeholder{
+            color: #ff9a9e;
+        }
+        .input-box input{
+            border: none;
+            border-radius: 12px;
+            padding: 20px;
+            background: transparent;
+            outline: none;
+            border-bottom: 2px solid gray;
+            
+        }
+        .submit:hover{
+            background-color: #f0dcdd;
+        }
+        label{
+            position: relative;
+            right: 20px;
+            margin-left: 0px;
+            
+        }
+.l1{
+    position: relative;
+    right: 30px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>welcome to make your registration</h1>
+        <div class="card">
+            <div class="input-box">
+            <label class="l1">fullname</label>
+            <span class="icon"><ion-icon
+                name="email"><ion-icon></span>
+            <input type="text" id="username" 
+            placeholder="your email"><br><br>
+            <div class="input-box">
+            <label class="l1">Email</label>
+            <span class="icon"><ion-icon
+                name="email"><ion-icon></span>
+            <input type="text" id="username" 
+            placeholder="your email"><br><br>
+            <div class="input-box">
+            <label class="l1">phone number</label>
+            <span class="icon"><ion-icon
+                name="email"><ion-icon></span>
+            <input type="text" id="username" 
+            placeholder="your email"><br><br>
+            
+            <div class="input-box">
+            <label class="l1">passward</label>
+            <input type="password" id="username" 
+            placeholder="your passward"><br><br>
+            <button onclick="getname()"
+             class="submit">submit</button>
+            <p id="result"></p>
+        </div>
+        
+    </div>
+
+</div>
+</div>
+     
+    <script>
+        function getname(){
+            let name = document.getElementById(
+            'username').value;
+            document.getElementById('result').innerText
+             = 'hello ' + name;
+        
+        }
+        
+    </script>
+
+</body>
+</html>
